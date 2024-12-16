@@ -15,7 +15,7 @@ class DiscordBot:
         self.TOKEN = os.getenv("DISCORD_BOT_TOKEN")
         self.WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
         self.MONGO_CLUSTER = os.getenv("MONGO_CLUSTER")
-        self.MONGO_URI = f"mongodb+srv://{os.getenv('username')}:{os.getenv('password')}@self.MONGO_CLUSTER"
+        self.MONGO_URI = f"mongodb+srv://{os.getenv('username')}:{os.getenv('password')}@{self.MONGO_CLUSTER}"
         self.COLLECTION_NAME = os.getenv("COLLECTION_NAME")
         self.DATABASE_NAME = os.getenv("DATABASE_NAME")
         # Initialize the MongoDB scraper
